@@ -3,9 +3,12 @@ const express = require("express");
 const mongoose = require("mongoose");
 const PORT = process.env.PORT;
 const emailRoutes = require("./routes/emailRoutes");
+const cors = require("cors");
 require("./scheduler");
 
 const app = express();
+
+app.use(cors());
 
 // Route middleware
 

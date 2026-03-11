@@ -4,4 +4,6 @@ const route = express.Router();
 
 //post email
 
-route.post("/", scheduledEmail);
+route.post("/schedule", scheduledEmail);
+
+module.exports = route;
