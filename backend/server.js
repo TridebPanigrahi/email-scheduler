@@ -2,6 +2,8 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const PORT = process.env.PORT;
+const emailRoutes = require("./routes/emailRoutes");
+require("./scheduler");
 
 const app = express();
 
@@ -24,3 +26,5 @@ async function connectDb() {
 }
 
 connectDb();
+
+app.use("/api/email", emailRoutes);
