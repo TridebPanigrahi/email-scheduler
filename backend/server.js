@@ -14,6 +14,10 @@ app.use(cors());
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("Email Scheduler Backend Running 🚀");
+});
+
 // connect DB
 async function connectDb() {
   try {
@@ -29,9 +33,5 @@ async function connectDb() {
 }
 
 connectDb();
-
-app.get("/", (req, res) => {
-  res.send("Email Scheduler Backend Running 🚀");
-});
 
 app.use("/api/email", emailRoutes);
