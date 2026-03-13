@@ -1,7 +1,7 @@
 import Axios from "axios";
 
 export const clientApi = Axios.create({
-  baseURL: "http://65.2.171.128:5000/api",
+  baseURL: "http://65.1.252.45:5000/api",
   timeout: 5000,
 });
 
