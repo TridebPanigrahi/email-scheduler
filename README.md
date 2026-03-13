@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+# 📧 Email Scheduler Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack web application that allows users to schedule and manage emails efficiently.  
+The system supports secure authentication, automated background jobs, and cloud deployment.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- ✅ User Authentication & Authorization (JWT Based)
+- ✅ Create, Schedule, Update and Delete Emails
+- ✅ Automated Email Sending using Cron Jobs
+- ✅ Form Validation with User-Friendly Error Messages
+- ✅ Responsive UI using Material UI
+- ✅ RESTful API Architecture
+- ✅ Cloud Deployment on AWS EC2
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+### Frontend
+- React.js
+- Material UI
+- Axios
+- Form Validation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Node Cron
 
-### `npm run build`
+### Cloud & Deployment
+- AWS EC2
+- Nginx (Optional if used)
+- PM2 (Optional if used)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📂 Project Structure
+project-root
+│
+├── frontend
+│ ├── components
+│ ├── pages
+│ ├── services
+│ └── App.js
+│
+├── backend
+│ ├── controllers
+│ ├── routes
+│ ├── models
+│ ├── cron
+│ └── server.js
+│
+└── README.md
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ⚙️ Installation & Setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 1️⃣ Clone the Repository
+git clone https://github.com/TridebPanigrahi/email-scheduler.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 2️⃣ Backend Setup
+cd backend
+npm install
+npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 3️⃣ Frontend Setup
+cd frontend
+npm install
+npm start
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ⏰ Cron Job Functionality
 
-### Code Splitting
+- Background scheduler runs at defined intervals
+- Automatically checks pending emails
+- Sends scheduled emails without manual intervention
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🌐 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The application is deployed on **AWS EC2** instance.
 
-### Making a Progressive Web App
+### Deployment Steps:
+- Build frontend using `npm run build`
+- Host frontend build on server / S3
+- Run backend using PM2 / Node
+- Configure security group and port access
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 📸 Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Project URL: https://dwb1k0tfh2okm.cloudfront.net/
 
-### Deployment
+![Project Interface](image.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📌 Future Enhancements
+
+- Email templates support
+- Retry mechanism for failed emails
+- Dashboard analytics
+- Notification system
+
+---
+
+## 👨‍💻 Author
+
+**Trideb Panigrahi**
+
+- GitHub: https://github.com/TridebPanigrahi/email-scheduler
+- LinkedIn: https://www.linkedin.com/in/trideb-panigrahi-6a7297209/
+
+---
+
+## ⭐ If you like this project, give it a star!
